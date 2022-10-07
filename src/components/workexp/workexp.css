@@ -1,0 +1,75 @@
+.workexp__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    
+}
+
+.workexp__card {
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.workexp__card:hover {
+    transform: translateY(-10px);
+}
+
+.workexp__card:nth-child(1) {
+    background-color: White;
+    box-shadow: 0px 5px 20px 0px rgb(108,108, 229 / 50%);
+}
+
+.workexp__card:nth-child(2) {
+    background-color: White;
+    box-shadow: 0px 5px 20px 0px rgb(249,215, 76 / 50%);
+}
+
+.workexp__card:nth-child(3) {
+    background-color: White;
+    box-shadow: 0px 5px 20px 0px rgb(249,123, 139 / 50%);
+}
+
+.workexp__img {
+    margin-bottom: 2rem;
+    max-width: 100px;
+}
+
+.workexp__titles {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.workexp__description {
+    color: Black;
+}
+
+.workexp__card:nth-child(2) .workexp__titles {
+    color: var(--title-color);
+}
+
+.workexp__card:nth-child(2) .workexp__description {
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .workexp__container {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .workexp__container {
+        grid-template-columns: 310px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .workexp__container {
+        grid-template-columns: 1fr;
+    }
+}
